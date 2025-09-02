@@ -1,11 +1,11 @@
 def validar_cartao(cartao):
-  # Converter o cartão em uma lista de inteiros
+
     cartao = [int(digito) for digito in cartao]
 
-    # Somar os dígitos em posição ímpar
+
     impares = sum(cartao[-1::-2])
 
-    # Somar o dobro dos dígitos em posição par
+
     pares = []
     for digito in cartao[-2::-2]:
         dobro = digito * 2
